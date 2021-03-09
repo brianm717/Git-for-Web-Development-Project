@@ -1,0 +1,101 @@
+    https://codepen.io/brianm717/pen/MWbzmQM
+
+    1.  What is Semantic HTML? Semantic HTML is the correct use of HTML to reinforce the meaning of content on a web page, rather than merely define its appearance. 
+        Semantically correct HTML helps search engines, screen readers, and other user devices determine the significance and context of web content.
+    2.  What is HTML used for? code that is used to structure a webpage and it's content
+    3.  What is an attribute and where do we put it? Attributes define additional characteristics or properties of the element such as width and height of an image. 
+        Attributes are always specified in the start tag (or opening tag) and usually consists of name/value pairs like name="value" . Attribute values should always be enclosed in quotation marks.
+    4.  What is the h1 tag used for? most importand text in the document How many times should I use it on a page?just once
+    5.  Name two tags that have required attributes - img , anchor, id and class. Some HTML tags require attributes to work properly. Name two tags that have required attributes
+    6.  What do we put in the head of our HTML document? The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+        ... Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.
+    7.  What is an id? The id global attribute defines an identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier),
+         scripting, or styling (with CSS).
+    8.  What elements can I add an id to? #my header and <h1>
+    9.  How many times can I use the same id on a page? The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document
+    10. What is a class? The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a class in a style sheet. 
+        However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.
+    11. What elements can I add a class to? div, h1-h6, p
+    12. How many times can I use the same class on a page? There is no technical limit (barring the amount of memory the browser may be consuming), 
+        but one should heavily consider having loads of classes on any element as the browser will have to parse all the classes, apply those styles and render the page.
+    13. How do I get my link to open in a new tab? <p>Check out <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.</p>
+    14. What is the alt attribute in the image tag used for? The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. 
+        The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+    15. How do I reference an id?The value of the id attribute must be unique within the HTML document. The id attribute is used to point to a specific style declaration in a style sheet. 
+        It is also used by JavaScript to access and manipulate the element with the specific id. The syntax for id is: write a hash character (#), followed by an id name.
+    16. What is the difference between a section and a div?The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. 
+        The <div> tag defines a division or a section in an HTML document. The <div> tag is used to group block-elements to format them with CSS.
+    17. What is CSS used for? "style" CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. 
+        It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+    18. How to we select an element? Example - every h2 on the page
+         <style>
+         div p h2 {
+            color: white;
+            background-color: blue;
+         }
+         </style>
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one:For example, you can have only one element with a #header id or one element with a #footer id on your page. 
+	On the other hand, a class value can be given to one or more HTML elements, usually of the same type. For example, you can have multiple paragraphs with a .
+    20. How do we select classes in CSS?To select elements with a specific class, write a period (.) character, followed by the name of the class.
+        You can also specify that only specific HTML elements should be affected by a class. To do this, start with the element name, then write the period (.)
+    21. How do we select a p element with a single class of “human””? p.human
+    22. What is a parent child selector? When would this be useful? The ("parent > child") selector selects all elements that are a direct child of the specified element.Child Selector: Child Selector is used to match all the 
+        elements which are child of a specified element. It gives the relation between two elements. The element > element selector selects those elements which are the children of specific parent. ... Example: Match all <h2> element 
+        that are child of only <div> element. The CSS child selector has two selectors separated by a > symbol. The first selector indicates the parent element. The second selector indicates the child element CSS will
+    23. How do you select all links within a div with the class of sidebar?*<div class="sidebar">
+    24. What is a pseudo selector?A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's 
+        pointer hovers over it.
+    25. What do we use the change the spacing between lines?Use the line-height property in CSS to do so. Browsers by default will create a certain amount of space between lines to ensure that the text is easily readable. 
+        For example, for 12-point type, a browser will place about 1 point of vertical space between lines. The space between lines of text is called the leading, a term loosely inherited from print publishing.
+
+        Line-height uses the standard CSS units of measurement, just like letter-spacing. You can designate text to have 26 points of leading like this:
+
+        <STYLE TYPE=”text/css”>
+        <!--
+         .twentysixpoint {line-height: 26pt;}
+         -->
+        </STYLE>
+        <P class=”twentysixpoint”>The text in this paragraph would have 26 points of leading.</P>
+    26. What do we use to change the spacing between letters?To adjust the letter spacing of your text, you need to use the CSS letter-spacing property. The value that you provide determines the space between the letters. 
+        Below are some examples using different values for the letter-spacing property.
+        <!-- Codes by HTMLcodes.ws -->
+        <p style="width:180px;float:left;background-color:#ffc;">Normal text: This text does not have its letter-spacing specified. Therefore it uses a default value.</p>
+        <p style="letter-spacing:3px;width:180px;float:right;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of 3 pixels.</p>
+        <p style="letter-spacing:0.1cm;width:180px;float:left;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of 0.1 centimeter.</p>
+        <p style="letter-spacing:0.3em;width:180px;float:right;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of 0.3em.</p>
+
+        <p style="letter-spacing:-1px;width:180px;float:left;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of negative 1 pixel.</p>
+        <p style="letter-spacing:-0.05cm;width:180px;float:right;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of negative 0.05 centimeter.</p>
+        <p style="letter-spacing:-0.1em;width:180px;float:left;background-color:#eee;">Adjusted letter-spacing: This text has got letter-spacing value of negative 0.1em.</p>
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?The CSS text-transform property is the key to managing text uppercase and lowercase rendering. There are 5 different values you can use:
+        lowercase: makes all of the letters in the selected text lowercase. uppercase: makes all of the letters in the selected text uppercase or ALL CAPS.
+    28. How do I add a 1px border around my div that is dotted and black?div {border-style: dotted; border-width: 1px;border-color: coral;} or div{border: 1px dotted black;}
+    29. How do I select everything on the page? The * selector selects all elements. The * selector can also select all elements inside another element (See "More Examples").
+        div * {
+        background-color: yellow;
+              }
+    30. How do I write a comment in CSS?/* This is a single-line comment */ p { color: red; }
+                                        p { color: red; /* Set text color to red */ }
+                                        /* This is. a multi-line. comment */ p { color: red; }
+    31. How do I find out what file I am in, when I am using the command line? ls: To see them in the terminal, you use the "ls" command, which is used to list files and directories.
+        So, when I type "ls" and press "Enter" we see the same folders that we do in the Finder window.
+    32. Using the command line - how do I see a list of files/folders in my current folder? dir : Once you're in a directory, use the dir command to view the files and folders within. Type dir to get a list of everything 
+        in your current directory (displayed at the start of the command prompt). Alternatively, use dir "Folder Name" to list the contents of a named sub-directory.
+    33. How do I remove a file via the command line? Why do I have to be careful with this? rm -r file.txt or rmdir -r testdir: you can remove an entire parent directory and everything inside
+    34. Why should I use version control? Version control is important when documents are being created, and for any records that undergo a lot of revision and redrafting. 
+        It helps us to track changes and identify when key decisions were made along the way.
+    35. How often should I commit to github?The general rule (for both scenarios) would be: Commit as often as possible. If you think "it's not ready yet" (because it'll break the build or simply isn't done yet) 
+        then create a branch and commit to that branch but make sure you do commit.
+    36. What is the command we would use to push our repo up to github? git push -u origin branch-name: will push all of your commits from your local machine up onto github 
+    37. Walk me through Lambda's git flow. OK:1.FORK 2:CLONE REP, COPY BUTTON 3.OPEN TERMINAL AND TYPE "cd Documents" HIT ENTER, THEN TYPE "cd Git" HIT ENTER 4.THEN TYPE "git clone repolinkhere" HIT ENTER. 5.TYPE "cd reponame"HIT ENTER 
+        6. TYPE "code ." MAKE CHANGES NEEDED , SAVE 7.CREATE THE BRANCH, TYPE "git checkout -b 'firstname-lastname'" HIT ENTER 8.TYPE "git add ." ENTER 9. TYPE "git commit -m "Your helpful commit message here"" ENTER 
+        10.TYPE "git push -u origin branch-name" ENTER 11. Go back to your forked Project repo on github (make sure you are on YOUR FORKED copy NOT the original Lambda one)12.GO TO BRANCH MASTER AND SELECT YOUR NAME BRANCH 
+        13.click new pull request 14.GO TO BASE REPOSITORY AND GO TO YOUR FORKED REPO. 15.Click Create Pull Request
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
